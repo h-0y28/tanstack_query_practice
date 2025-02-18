@@ -49,6 +49,7 @@ const Page = () => {
       setLocalPosts((prev) => [newPost, ...prev]);
       setNewTitle("");
       setNewBody("");
+      refetch();
     },
     onError: (error) => {
       console.error("게시글 등록 실패:", error);
